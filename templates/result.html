@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="icon" href="static/download.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('static/bgimg.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Dynamic background colors */
+        .high {
+            background-color: rgb(255, 0, 0); /* red for high risk */
+        }
+
+        .low {
+            background-color: rgba(0, 128, 0, 0.6); /* green for low risk */
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 20px;
+            color: #34495e;
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Use risk class in container -->
+    <div class="container {{ risk }}">
+        <h2>Prediction Result:</h2>
+        <p>{{ prediction_text }}</p>
+        <a href="/">🔄 Try Again</a>
+    </div>
+</body>
+</html>
