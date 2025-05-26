@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team Members</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: hwb(0 53% 0% / 0.258);
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    
+    .topimg {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+            
+    }
+
+    
+
+    .top-button {
+        position: fixed;
+        top: 50px;
+        left: 50px;
+            
+    }
+
+    .top-button a {
+        text-decoration: none;
+        background-color: #3498db;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease;
+    }
+
+    .top-button a:hover {
+        background-color: #2980b9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #000000;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .member-card {
+      background: rgba(165, 165, 165, 0.463);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 350px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .member-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+
+    .member-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #000000;
+    }
+
+    .member-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .member-role {
+      font-size: 0.95em;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    .member-contact {
+      font-size: 0.9em;
+      color: #000000;
+      line-height: 1.4;
+    }
+
+    /* Floating Button */
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    .floating-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <div class="top-button">
+        <a href="index.html">Back</a>
+    </div>
+
+    <div class="topimg">
+        <img src="static/clg_logo.png" alt="College Logo">
+    </div>
+
+  <h1><u>Our Team</u></h1>
+
+  <div class="team-container">
+    <!-- Your Card -->
+    <div class="member-card">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQEVQOSr07GViA/profile-framedphoto-shrink_400_400/B4DZb8gU8sGkAc-/0/1747993055409?e=1748898000&v=beta&t=heuyA85l0S73VzBEh5rFjLWxUhmG-KwwebEoNrEoRXA" alt="Your Photo" class="member-photo" />
+      <div class="member-name">Dev Asati</div><b>
+      <div class="member-role">Team Leader</div>
+      <div class="member-contact">
+        Email: 0105AL221059@oriental.ac.in<br />
+        <a href="https://www.linkedin.com/in/dev-asati-283b24253/" target="_blank">LinkedIn</a> </b>
+      </div>
+    </div>
+
+    <!-- Team Member 1 -->
+    <div class="member-card">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQEeOhepmELgLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1682190411896?e=1753920000&v=beta&t=NqyNLrzdQzjiUqIux9ZZWv4Zx9hQTn6HvX1LA8N0PNk" alt="Member 1" class="member-photo" />
+      <div class="member-name">Abhishek Kumar</div><b>
+      <div class="member-role">Developer</div>
+      <div class="member-contact">
+        Email: 0105AL221010@oriental.ac.in<br />
+        <a href="https://www.linkedin.com/in/abhishek-kumar-436340259/" target="_blank">LinkedIn</a></b>
+      </div>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="member-card">
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQF33Qm1hCgqxQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668355359025?e=1753920000&v=beta&t=HSLEEeoCFHNeSEg3q_3XWVtphNzCUtHAM7svwyKonmM" alt="Member 2" class="member-photo" />
+      <div class="member-name">Dipendra Kumar Sah</div><b>
+      <div class="member-role">Designer</div>
+      <div class="member-contact">
+        Email: 0105AL221066@oriental.ac.in<br />
+        <a href="https://www.linkedin.com/in/dipendra-kumar-sah-054b60256/" target="_blank">LinkedIn</a></b>
+      </div>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="member-card">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQGj5kyG0kWkpQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1683574469986?e=1753920000&v=beta&t=UIEQKAJ8qQWzrOhkpQm7uARChTsdZFP-We4o9J1T17c" alt="Member 3" class="member-photo" />
+      <div class="member-name">Gourav Vyas</div><b>
+      <div class="member-role">Tester</div>
+      <div class="member-contact">
+        Email: 0105AL221074@oriental.ac.in<br />
+        <a href="https://www.linkedin.com/in/gourav-vyas-3920b1267/" target="_blank">LinkedIn</a></b>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Button -->
+  <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtWvMZnspQlmtXWHQhccmgfRWvkXWXsNKBfGqtPqvksjBMngMVRnXrtqJLJMQqzhTXJlzk"><button class="floating-button" title="Contact Us">✉️</button></a>
+
+</body>
+</html>
