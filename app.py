@@ -7,13 +7,14 @@ app = Flask(__name__)
 # Load the trained model (make sure model.pkl is in the same folder)
 model = pickle.load(open('model.pkl', 'rb'))
 
-@app.route('/')
-def team():
-    return render_template('team.html')  # Team Page
 
 @app.route('/')
 def home():
     return render_template('index.html')  # Form page
+
+@app.route('/')
+def team():
+    return render_template('team.html')  # Team Page
 
 @app.route('/predict', methods=['POST'])
 def predict():
