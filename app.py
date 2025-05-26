@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Load the trained model (make sure model.pkl is in the same folder)
 model = pickle.load(open('model.pkl', 'rb'))
 
-@app.route('/team')
+@app.route('/')
 def team():
     return render_template('team.html')  # Team Page
 
